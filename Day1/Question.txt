@@ -1,0 +1,6 @@
+Create a new angular app
+Add menus and components for 
+   Doctors
+   Appointments
+   MyProfile
+   

@@ -1,0 +1,33 @@
+SPA - 
+Building blocks 
+  *Component
+  Services
+  Pipes
+  Models
+  Directives
+Server
+  Node
+    Dynamic serer
+Default port 
+  4200
+  url ->  http://localhost:4200/
+Cmd to run server
+  ng serve
+
+
+Component
+  ts -> component's class file
+  spec -> testing
+  html -> view
+  css -> styling file
+
+
+ng g c menu
+
+Install bootstrap
+npm i bootstrap --save
+
+
+
+
+

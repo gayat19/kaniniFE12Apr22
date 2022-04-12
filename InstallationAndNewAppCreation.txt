@@ -1,0 +1,22 @@
+Node download link
+https://nodejs.org/en/download/
+
+Open cmd prompt
+node --version
+
+Install angular
+npm install -g @angular/cli
+
+check the version of angular
+ng --version
+
+Go to the folder where you want tp create an angular application
+ng new firstApp
+? Would you like to add Angular routing? (y/N)y
+Which stylesheet format would you like to use? (Use arrow keys)
+> CSS
+  SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass   [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less   [ http://lesscss.org  
+Press enter
+                                           ]
