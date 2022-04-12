@@ -1,0 +1,13 @@
+<h1 class="alert alert-primary"> Welcome to the pizza home</h1>
+<h1>
+    {{name}}
+    <hr>
+    <input type="text" 
+    #uname 
+    (change)="updateName(uname.value)">
+    <hr>
+    <input [value]="name">
+    <hr>
+    <input [(ngModel)]="name">
+    <i [class]='changeClass' (click)="change()"></i>
+</h1>

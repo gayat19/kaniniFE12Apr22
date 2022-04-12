@@ -1,0 +1,10 @@
+<!-- Structural directive for iteration -->
+<div *ngFor="let pizza of pizzas">
+  <img [src]="pizza.pic" height="200" width="200">
+  <p>
+      {{pizza.name}}
+      <br>
+      {{pizza.price | currency}}
+      <!-- pipe for currenct symbol display -->
+  </p>
+</div>
