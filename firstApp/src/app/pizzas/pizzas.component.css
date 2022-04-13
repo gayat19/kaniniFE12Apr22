@@ -10,3 +10,11 @@ div{
 p{
     text-align: center;
 }
+#sectionMain{
+    border: 1px beige solid;
+    height: 400px;
+    width: 1000px;
+}
+#divCart{
+    float: right;
+}

@@ -1,0 +1,13 @@
+
+Create model
+   Doctor
+      Id
+      Name
+	 	Speciality
+		Experience
+		
+Create a service that will have methods to do CRUD on doctor array
+Inject the service
+List the doctors in the doctors component
+   
+   

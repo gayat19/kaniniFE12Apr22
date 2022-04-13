@@ -1,1 +1,16 @@
-<h1>Cart is empty</h1>
+<div *ngFor="let c of cart">
+    <p>
+        <img [src]="c.pizza.pic" height="100" width="100">
+        {{c.pizza.name}}
+        <br>
+        {{c.pizza.price | currency}}
+        {{c.pizza.likes}}<i class="fa fa-thumbs-up" 
+        aria-hidden="true"></i>
+        <!-- pipe for currenct symbol display -->
+        <br>
+        Quantity:{{c.quantity}}
+        <br>
+        Price:{{(c.quantity??0)*(c.pizza.price??0)}}
+    </p>
+    <hr>
+</div>

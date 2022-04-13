@@ -10,6 +10,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { CartComponent } from './cart/cart.component';
 import { FormsModule } from '@angular/forms';
 import { PizzaService } from './services/pizza.service';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { PizzaService } from './services/pizza.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [PizzaService],
+  providers: [PizzaService,CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,10 +1,19 @@
 <!-- Structural directive for iteration -->
-<div *ngFor="let pizza of pizzas">
-  <img [src]="pizza.pic" height="200" width="200">
-  <p>
-      {{pizza.name}}
-      <br>
-      {{pizza.price | currency}}
-      <!-- pipe for currenct symbol display -->
-  </p>
-</div>
+<section id="sectionMain">
+  <div *ngFor="let pizza of pizzas">
+    <img [src]="pizza.pic" height="200" width="200">
+    <p>
+        {{pizza.name}}
+        <br>
+        {{pizza.price | currency}}
+        {{pizza.likes}}<i class="fa fa-thumbs-up" 
+        aria-hidden="true" (click)="like(pizza.id)"></i>
+        <!-- pipe for currenct symbol display -->
+        <button class="btn btn-primary" (click)="buy(pizza.id)">Add to cart</button>
+    </p>
+  </div>
+  <section id="divCart">
+    {{count}}
+    <i class="fa fa-shopping-cart" aria-hidden="true" (click)="goToCart()"></i>
+  </section>
+</section>
