@@ -1,13 +1,12 @@
 
-Create model
-   Doctor
-      Id
-      Name
-	 	Speciality
-		Experience
-		
-Create a service that will have methods to do CRUD on doctor array
-Inject the service
-List the doctors in the doctors component
-   
-   
+Add the add to cart button 
+Create a service for the cart  
+  Implement the addToCart functionality
+
+
+Add the heart symbol for teh doctor so that the doctor can be marked as fav
+(boolean)
+
+Fix appoitment for doctor
+  Add a fix appointment for the doctor
+  show the appoitment in the appoitment listing

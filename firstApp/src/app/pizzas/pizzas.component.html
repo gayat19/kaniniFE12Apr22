@@ -1,7 +1,7 @@
 <!-- Structural directive for iteration -->
 <section id="sectionMain">
   <div *ngFor="let pizza of pizzas">
-    <img [src]="pizza.pic" height="200" width="200">
+    <img [src]="pizza.pic" height="200" width="200" (click)="showPic(pizza.id)">
     <p>
         {{pizza.name}}
         <br>
@@ -13,7 +13,10 @@
     </p>
   </div>
   <section id="divCart">
+   
     {{count}}
     <i class="fa fa-shopping-cart" aria-hidden="true" (click)="goToCart()"></i>
+    <span *ngIf="user">{{user.name}}</span>
   </section>
+
 </section>

@@ -11,6 +11,9 @@ import { CartComponent } from './cart/cart.component';
 import { FormsModule } from '@angular/forms';
 import { PizzaService } from './services/pizza.service';
 import { CartService } from './services/cart.service';
+import { LoginComponent } from './login/login.component';
+import { UserService } from './services/user.service';
+import { PizzaPicComponent } from './pizza-pic/pizza-pic.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,16 @@ import { CartService } from './services/cart.service';
     HomeComponent,
     PizzasComponent,
     OrdersComponent,
-    CartComponent
+    CartComponent,
+    LoginComponent,
+    PizzaPicComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [PizzaService,CartService],
+  providers: [PizzaService,CartService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
