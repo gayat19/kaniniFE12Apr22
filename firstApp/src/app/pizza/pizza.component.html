@@ -1,0 +1,10 @@
+<img [src]="pizza.pic" height="200" width="200" >
+<p>
+    {{pizza.name}}
+    <br>
+    {{pizza.price | currency}}
+    {{pizza.likes}}<i class="fa fa-thumbs-up" 
+    aria-hidden="true" (click)="like(pizza.id)"></i> 
+    <!-- pipe for currenct symbol display-->
+   
+</p>

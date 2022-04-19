@@ -18,7 +18,7 @@ user:User;
 
   ngOnInit(): void {
   }
-login(){
+login(val:any){
   var user = this.userService.login(this.user);
   console.log(user);
   if(user!=null)
@@ -28,6 +28,7 @@ login(){
     localStorage.setItem("urole",user.role);
     this.router.navigateByUrl("pizzas");
   }
+  console.log(val);
 }
 reset(){
   this.user = new User();

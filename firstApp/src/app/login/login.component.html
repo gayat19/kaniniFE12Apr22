@@ -1,8 +1,21 @@
 <div>
     <label class="form-control">Username</label>
-    <input type="text" class="form-control" [(ngModel)]="user.username">
+    <input type="text" class="form-control" required minlength="3" [(ngModel)]="user.username" #un=ngModel>
+    <span *ngIf="un.valid != true && un.touched" class="alert alert-danger">
+      <span *ngIf="un.errors['required']">
+          Username cannot be empty
+      </span>
+      <span *ngIf="un.errors['minlength']">
+        Invalid username
+    </span>
+    </span>
     <label class="form-control">Password</label>
-    <input type="password" class="form-control" [(ngModel)]="user.password">
-    <button (click)="login()" class="btn btn-success">Login</button>
+    <input type="password" class="form-control" required [(ngModel)]="user.password" #pass=ngModel>
+    <span *ngIf="pass.valid != true && pass.touched" class="alert alert-danger">
+    <span *ngIf="pass.errors['required']">
+        password cannot be empty
+    </span>
+</span>
+    <button (click)="login(un)" class="btn btn-success">Login</button>
     <button (click)="reset()" class="btn btn-danger">Cancel</button>
 </div>

@@ -1,16 +1,8 @@
 <!-- Structural directive for iteration -->
 <section id="sectionMain">
   <div *ngFor="let pizza of pizzas">
-    <img [src]="pizza.pic" height="200" width="200" (click)="showPic(pizza.id)">
-    <p>
-        {{pizza.name}}
-        <br>
-        {{pizza.price | currency}}
-        {{pizza.likes}}<i class="fa fa-thumbs-up" 
-        aria-hidden="true" (click)="like(pizza.id)"></i>
-        <!-- pipe for currenct symbol display -->
-        <button class="btn btn-primary" (click)="buy(pizza.id)">Add to cart</button>
-    </p>
+    <app-pizza [pizza]="pizza" (likeEvent)="like($event)"></app-pizza>
+    <button class="btn btn-primary" (click)="buy(pizza.id)">Add to cart</button>
   </div>
   <section id="divCart">
    

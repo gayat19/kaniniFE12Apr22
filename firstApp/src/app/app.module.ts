@@ -14,6 +14,7 @@ import { CartService } from './services/cart.service';
 import { LoginComponent } from './login/login.component';
 import { UserService } from './services/user.service';
 import { PizzaPicComponent } from './pizza-pic/pizza-pic.component';
+import { PizzaComponent } from './pizza/pizza.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PizzaPicComponent } from './pizza-pic/pizza-pic.component';
     OrdersComponent,
     CartComponent,
     LoginComponent,
-    PizzaPicComponent
+    PizzaPicComponent,
+    PizzaComponent
   ],
   imports: [
     BrowserModule,

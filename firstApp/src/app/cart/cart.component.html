@@ -1,6 +1,6 @@
 <div *ngFor="let c of cart">
     <p>
-        <img [src]="c.pizza.pic" height="100" width="100">
+        <!-- <img [src]="c.pizza.pic" height="100" width="100">
         {{c.pizza.name}}
         <br>
         {{c.pizza.price | currency}}
@@ -8,6 +8,7 @@
         aria-hidden="true"></i>
         <!-- pipe for currenct symbol display -->
         <br>
+        <app-pizza [pizza]="c.pizza"></app-pizza>
         Quantity:{{c.quantity}}
         <br>
         Price:{{(c.quantity??0)*(c.pizza.price??0)}}
